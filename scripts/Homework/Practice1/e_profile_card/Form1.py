@@ -22,10 +22,12 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(375, 177)
+        Form.resize(320, 180)
+        Form.setMinimumSize(QSize(320, 180))
+        Form.setMaximumSize(QSize(320, 180))
         self.horizontalLayoutWidget_3 = QWidget(Form)
         self.horizontalLayoutWidget_3.setObjectName(u"horizontalLayoutWidget_3")
-        self.horizontalLayoutWidget_3.setGeometry(QRect(50, 90, 281, 31))
+        self.horizontalLayoutWidget_3.setGeometry(QRect(20, 90, 281, 31))
         self.horizontalLayout_3 = QHBoxLayout(self.horizontalLayoutWidget_3)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
@@ -42,7 +44,7 @@ class Ui_Form(object):
 
         self.horizontalLayoutWidget_4 = QWidget(Form)
         self.horizontalLayoutWidget_4.setObjectName(u"horizontalLayoutWidget_4")
-        self.horizontalLayoutWidget_4.setGeometry(QRect(50, 120, 281, 31))
+        self.horizontalLayoutWidget_4.setGeometry(QRect(20, 120, 281, 31))
         self.horizontalLayout_4 = QHBoxLayout(self.horizontalLayoutWidget_4)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
@@ -59,7 +61,7 @@ class Ui_Form(object):
 
         self.horizontalLayoutWidget_5 = QWidget(Form)
         self.horizontalLayoutWidget_5.setObjectName(u"horizontalLayoutWidget_5")
-        self.horizontalLayoutWidget_5.setGeometry(QRect(50, 60, 281, 31))
+        self.horizontalLayoutWidget_5.setGeometry(QRect(20, 60, 281, 31))
         self.horizontalLayout_5 = QHBoxLayout(self.horizontalLayoutWidget_5)
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
         self.horizontalLayout_5.setContentsMargins(0, 0, 0, 0)
@@ -76,7 +78,7 @@ class Ui_Form(object):
 
         self.horizontalLayoutWidget_6 = QWidget(Form)
         self.horizontalLayoutWidget_6.setObjectName(u"horizontalLayoutWidget_6")
-        self.horizontalLayoutWidget_6.setGeometry(QRect(50, 30, 281, 31))
+        self.horizontalLayoutWidget_6.setGeometry(QRect(20, 30, 281, 31))
         self.horizontalLayout_6 = QHBoxLayout(self.horizontalLayoutWidget_6)
         self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
         self.horizontalLayout_6.setContentsMargins(0, 0, 0, 0)

@@ -14,11 +14,12 @@ class Window(QtWidgets.QWidget):
 
         l_left = QtWidgets.QVBoxLayout()
         l_left.addWidget(self.login_widget)
-        l_left.addWidget(self.ship_parameters)
         l_left.addWidget(self.profile_window)
+        l_left.addWidget(self.ship_parameters)
+
         # l_left.addSpacerItem(QtWidgets.QSpacerItem(
         #     w=0,h=10, QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding))
-        l_main = QtWidgets.QVBoxLayout()
+        l_main = QtWidgets.QHBoxLayout()
         l_main.addLayout(l_left)
         l_main.addWidget(self.engine_window)
         self.setLayout(l_main)

@@ -22,10 +22,12 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(474, 350)
+        Form.resize(450, 351)
+        Form.setMinimumSize(QSize(450, 300))
         self.groupBox = QGroupBox(Form)
         self.groupBox.setObjectName(u"groupBox")
-        self.groupBox.setGeometry(QRect(10, 20, 461, 301))
+        self.groupBox.setGeometry(QRect(10, 20, 430, 301))
+        self.groupBox.setMinimumSize(QSize(300, 300))
         self.verticalLayoutWidget = QWidget(self.groupBox)
         self.verticalLayoutWidget.setObjectName(u"verticalLayoutWidget")
         self.verticalLayoutWidget.setGeometry(QRect(10, 30, 71, 231))
@@ -79,7 +81,7 @@ class Ui_Form(object):
 
         self.verticalLayoutWidget_4 = QWidget(self.groupBox)
         self.verticalLayoutWidget_4.setObjectName(u"verticalLayoutWidget_4")
-        self.verticalLayoutWidget_4.setGeometry(QRect(360, 30, 81, 231))
+        self.verticalLayoutWidget_4.setGeometry(QRect(340, 30, 81, 231))
         self.verticalLayout_4 = QVBoxLayout(self.verticalLayoutWidget_4)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
