@@ -8,7 +8,7 @@
 (красивая - красным, кнопка - синим)
 """
 
-from PySide6 import QtWidgets
+from PySide6 import QtWidgets, QtCore
 
 
 class Window(QtWidgets.QWidget):
@@ -18,9 +18,33 @@ class Window(QtWidgets.QWidget):
 
         self.__initUi()
 
-    def __initUi(self):
-        self.__label = QtWidgets.QLabel(self)
+        self.__labelColorStatus = True
 
+    def __initUi(self):
+        self.__label = QtWidgets.QLabel()
+        self.__label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
+        self.__label.setText("<span style='color:red;'>Красивая</span> <span style='color:green;'>кнопка</span>")
+        # self.__label.setStyleSheet("background-color: white")
+
+        self.__label.installEventFilter(self)
+
+        l = QtWidgets.QVBoxLayout()
+        l.addWidget(self.__label)
+
+        self.setLayout(l)
+
+    def eventFilter(self, watched, event):
+        if event.type() == QtCore.QEvent.Type.MouseButtonPress:
+            self.__invertColor()
+
+        return super().eventFilter(watched, event)
+
+    def __invertColor(self):
+        colors = ['red', 'green']
+
+        self.__label.setText(f"<span style='color:{colors[self.__labelColorStatus]};'>Красивая</span> <span style='color:{colors[not self.__labelColorStatus]};'>кнопка</span>")
+
+        self.__labelColorStatus = not self.__labelColorStatus
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication()
