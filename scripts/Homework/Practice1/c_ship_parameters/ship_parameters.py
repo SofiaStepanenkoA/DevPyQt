@@ -115,3 +115,4 @@ class Ui_Form(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u041d\u043e\u0440\u043c\u0430</p></body></html>", None))
     # retranslateUi
 
+

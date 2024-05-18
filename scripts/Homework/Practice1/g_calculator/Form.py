@@ -134,3 +134,4 @@ class Ui_Form(object):
         self.label_3.setText(QCoreApplication.translate("Form", u"0", None))
     # retranslateUi
 
+

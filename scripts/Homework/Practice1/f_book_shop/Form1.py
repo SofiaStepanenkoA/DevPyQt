@@ -100,3 +100,4 @@ class Ui_Form(object):
         self.pushButton.setText(QCoreApplication.translate("Form", u"\u041e\u043f\u043b\u0430\u0442\u0438\u0442\u044c", None))
     # retranslateUi
 
+

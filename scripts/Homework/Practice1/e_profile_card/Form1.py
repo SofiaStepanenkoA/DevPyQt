@@ -110,4 +110,4 @@ class Ui_Form(object):
         self.label_6.setText(QCoreApplication.translate("Form", u"\u0418\u043c\u044f", None))
         self.plainTextEdit_6.setPlainText(QCoreApplication.translate("Form", u"\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0432\u0430\u0448\u0435 \u0438\u043c\u044f", None))
     # retranslateUi
-
+    #

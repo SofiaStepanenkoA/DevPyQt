@@ -55,3 +55,4 @@ class Ui_Dialog(object):
         self.plainTextEdit_2.setPlainText("")
     # retranslateUi
 
+
